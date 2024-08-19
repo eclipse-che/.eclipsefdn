@@ -208,8 +208,12 @@ orgs.newOrg('eclipse-che') {
       ],
     },
     orgs.newRepo('che-archetypes') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       default_branch: "master",
+      delete_branch_on_merge: false,
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -296,9 +300,13 @@ orgs.newOrg('eclipse-che') {
       ],
     },
     orgs.newRepo('che-dependencies') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       default_branch: "master",
+      delete_branch_on_merge: false,
       description: "Che Dependencies",
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -312,11 +320,14 @@ orgs.newOrg('eclipse-che') {
       ],
     },
     orgs.newRepo('che-dev') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       default_branch: "master",
       dependabot_security_updates_enabled: true,
       description: "Development resources and tools for Eclipse Che.",
       homepage: "",
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -346,11 +357,13 @@ orgs.newOrg('eclipse-che') {
     orgs.newRepo('che-devfile-registry') {
       allow_merge_commit: true,
       allow_update_branch: false,
+      archived: true,
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -408,8 +421,11 @@ orgs.newOrg('eclipse-che') {
       ],
     },
     orgs.newRepo('che-dockerfiles') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       default_branch: "master",
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -531,8 +547,12 @@ orgs.newOrg('eclipse-che') {
       },
     },
     orgs.newRepo('che-editor-gwt-ide') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       default_branch: "master",
+      delete_branch_on_merge: false,
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -558,8 +578,12 @@ orgs.newOrg('eclipse-che') {
       ],
     },
     orgs.newRepo('che-go-jsonrpc') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       default_branch: "master",
+      delete_branch_on_merge: false,
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -580,8 +604,11 @@ orgs.newOrg('eclipse-che') {
       ],
     },
     orgs.newRepo('che-jwtproxy') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       dependabot_security_updates_enabled: true,
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -643,10 +670,13 @@ orgs.newOrg('eclipse-che') {
       ],
     },
     orgs.newRepo('che-lib') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       default_branch: "master",
       dependabot_security_updates_enabled: true,
       description: "Che Libraries",
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -674,10 +704,13 @@ orgs.newOrg('eclipse-che') {
       ],
     },
     orgs.newRepo('che-ls-jdt') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       default_branch: "master",
       dependabot_security_updates_enabled: true,
       description: "che-ls-jdt",
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -867,10 +900,13 @@ orgs.newOrg('eclipse-che') {
       ],
     },
     orgs.newRepo('che-parent') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       default_branch: "master",
       dependabot_security_updates_enabled: true,
       description: "Che project repository",
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -911,12 +947,15 @@ orgs.newOrg('eclipse-che') {
       ],
     },
     orgs.newRepo('che-plugin-broker') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       default_branch: "master",
       dependabot_security_updates_enabled: true,
       has_issues: false,
       has_projects: false,
       has_wiki: false,
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1071,9 +1110,13 @@ orgs.newOrg('eclipse-che') {
       ],
     },
     orgs.newRepo('che-plugin-svn') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       default_branch: "master",
+      delete_branch_on_merge: false,
       description: "Che SVN plugin",
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1243,18 +1286,25 @@ orgs.newOrg('eclipse-che') {
       ],
     },
     orgs.newRepo('che-tests') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
+      delete_branch_on_merge: false,
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
       },
     },
     orgs.newRepo('che-theia') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       dependabot_security_updates_enabled: true,
       gh_pages_build_type: "legacy",
       gh_pages_source_branch: "gh-pages",
       gh_pages_source_path: "/",
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -1397,10 +1447,13 @@ orgs.newOrg('eclipse-che') {
       ],
     },
     orgs.newRepo('che-workspace-loader') {
+      allow_merge_commit: true,
+      allow_update_branch: false,
       archived: true,
       default_branch: "master",
       dependabot_security_updates_enabled: true,
       has_issues: false,
+      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
