@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-che') {
+orgs.newOrg('ecd.che', 'eclipse-che') {
   settings+: {
     blog: "http://www.eclipse.org/che",
     description: "Eclipse Che® is a platform for providing Kubernetes-based Cloud Development Environments for Enterprise Teams. Learn more at http://www.eclipse.org/che",
