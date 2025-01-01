@@ -9,6 +9,19 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       default_workflow_permissions: "write",
     },
   },
+  teams+: [
+    orgs.newTeam('ecd-che-docs-reviewers') {
+      members+: [
+        "amisevsk",
+        "azatsarynnyy",
+        "ibuziuk",
+        "l0rd",
+        "nickboldt",
+        "svor",
+        "tolusha"
+      ],
+    },
+  ],
   secrets+: [
     orgs.newOrgSecret('CODECOV_TOKEN') {
       value: "********",
