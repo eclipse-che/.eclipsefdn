@@ -26,6 +26,9 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
     orgs.newOrgSecret('CODECOV_TOKEN') {
       value: "********",
     },
+    orgs.newOrgSecret('DEVELOCITY_API_TOKEN') {
+      value: "pass:bots/ecd.che/develocity.eclipse.org/api-token",
+    },
   ],
   _repositories+:: [
     orgs.newRepo('.github') {
