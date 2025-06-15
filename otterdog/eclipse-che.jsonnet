@@ -44,10 +44,9 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
-        "javascript",
+        "actions",
         "javascript-typescript",
         "ruby",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       description: "Eclipse Che Blog",
@@ -87,9 +86,8 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
-        "javascript",
+        "actions",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
@@ -246,9 +244,8 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
-        "javascript",
+        "actions",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
@@ -458,11 +455,10 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       allow_rebase_merge: false,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "go",
-        "javascript",
         "javascript-typescript",
         "python",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
@@ -743,10 +739,9 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "go",
-        "javascript",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
@@ -820,6 +815,7 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "go"
       ],
       code_scanning_default_setup_enabled: true,
@@ -1041,9 +1037,8 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
-        "javascript",
+        "actions",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
@@ -1238,10 +1233,9 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
+        "actions",
         "java-kotlin",
-        "javascript",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       has_issues: false,
@@ -1400,9 +1394,8 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
-        "javascript",
+        "actions",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
@@ -1431,9 +1424,7 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       allow_merge_commit: true,
       allow_update_branch: false,
       code_scanning_default_languages+: [
-        "javascript",
         "javascript-typescript",
-        "typescript"
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
