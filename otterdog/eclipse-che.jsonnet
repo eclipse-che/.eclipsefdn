@@ -81,6 +81,11 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       environments: [
         orgs.newEnvironment('github-pages'),
       ],
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: 1
+        },
+      ],
     },
     orgs.newRepo('che') {
       allow_merge_commit: true,
@@ -557,6 +562,11 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: 1
+        },
+      ],
     },
     orgs.newRepo('che-editor-gwt-ide') {
       allow_merge_commit: true,
@@ -808,6 +818,11 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
         },
         orgs.newRepoSecret('TRAVIS_TOKEN') {
           value: "********",
+        },
+      ],
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: 1
         },
       ],
     },
@@ -1228,6 +1243,11 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
           value: "********",
         },
       ],
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: 1
+        },
+      ],
     },
     orgs.newRepo('che-server') {
       allow_merge_commit: true,
@@ -1410,6 +1430,11 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
           value: "********",
         },
       ],
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: 1
+        },
+      ],
     },
     orgs.newRepo('che-website-publish') {
       allow_merge_commit: true,
@@ -1419,6 +1444,11 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: 1
+        },
+      ],
     },
     orgs.newRepo('che-workspace-client') {
       allow_merge_commit: true,
