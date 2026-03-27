@@ -39,6 +39,11 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       workflows+: {
         default_workflow_permissions: "write",
       },
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: 1
+        },
+      ],
     },
     orgs.newRepo('blog') {
       allow_merge_commit: true,
