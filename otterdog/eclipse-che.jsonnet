@@ -1487,6 +1487,11 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
           value: "********",
         },
       ],
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          required_approving_review_count: 1
+        },
+      ]
     },
     orgs.newRepo('che-workspace-loader') {
       allow_merge_commit: true,
