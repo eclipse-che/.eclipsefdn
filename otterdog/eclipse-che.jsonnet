@@ -321,6 +321,9 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
           requires_pull_request: false,
         },
       ],
+      environments: [
+        orgs.newEnvironment('copilot'),
+      ],
     },
     orgs.newRepo('che-dependencies') {
       allow_merge_commit: true,
@@ -1299,6 +1302,9 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
           value: "********",
         },
         orgs.newRepoSecret('MATTERMOST_WEBHOOK_URL') {
+          value: "********",
+        },
+        orgs.newRepoSecret('NPM_TOKEN') {
           value: "********",
         },
         orgs.newRepoSecret('QUAY_PASSWORD') {
