@@ -756,7 +756,6 @@ orgs.newOrg('ecd.che', 'eclipse-che') {
       code_scanning_default_languages+: [
         "actions",
         "go",
-        "javascript-typescript",
       ],
       code_scanning_default_setup_enabled: true,
       dependabot_security_updates_enabled: true,
